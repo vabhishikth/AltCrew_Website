@@ -132,6 +132,8 @@ export default function LearnPage() {
                       </time>
                       {" · "}
                       {p.readMin} min read
+                      {" · "}
+                      By Abhishikth Veng
                     </p>
                     <h2 className="mt-3 text-display max-w-[24ch] font-bold transition-colors group-hover:text-[var(--accent)]">
                       {p.title}

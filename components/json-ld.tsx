@@ -127,7 +127,7 @@ export const founderSchema = {
   givenName: "Abhishikth",
   familyName: "Veng",
   jobTitle: "Founder",
-  url: "https://altcrew.in/about",
+  url: "https://altcrew.in/about/abhishikth-veng",
   worksFor: { "@id": "https://altcrew.in/#organization" },
   description:
     "Founder of AltCrew. Lost 35 kg in a year through walking, weight training, and structured nutrition guided by a coach.",

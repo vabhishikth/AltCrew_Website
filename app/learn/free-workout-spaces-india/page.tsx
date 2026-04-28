@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     publishedTime: datePublished,
     modifiedTime: dateModified,
     authors: ["Abhishikth Veng"],
+    images: ["https://altcrew.in/og-default.jpg"],
   },
 };
 
@@ -32,7 +33,7 @@ const articleSchema = {
   "@type": "BlogPosting",
   headline: title,
   description,
-  author: { "@type": "Person", name: "Abhishikth Veng", jobTitle: "Founder" },
+  author: { "@id": "https://altcrew.in/#founder" },
   publisher: {
     "@type": "Organization",
     name: "AltCrew",

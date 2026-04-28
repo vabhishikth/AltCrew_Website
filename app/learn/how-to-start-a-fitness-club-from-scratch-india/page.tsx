@@ -24,6 +24,13 @@ export const metadata: Metadata = {
     publishedTime: datePublished,
     modifiedTime: dateModified,
     authors: ["Abhishikth Veng"],
+    images: ["https://altcrew.in/og-default.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["https://altcrew.in/og-default.jpg"],
   },
 };
 

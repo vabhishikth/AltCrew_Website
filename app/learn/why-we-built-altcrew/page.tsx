@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     publishedTime: datePublished,
     modifiedTime: dateModified,
     authors: ["Abhishikth Veng"],
+    images: ["https://altcrew.in/og-default.jpg"],
   },
 };
 
@@ -33,7 +34,7 @@ const articleSchema = {
   "@type": "BlogPosting",
   headline: title,
   description,
-  author: { "@type": "Person", name: "Abhishikth Veng", jobTitle: "Founder" },
+  author: { "@id": "https://altcrew.in/#founder" },
   publisher: {
     "@type": "Organization",
     name: "AltCrew",
@@ -94,7 +95,14 @@ export default function Post() {
                   />
                 </div>
                 <div>
-                  <p className="font-bold">Abhishikth Veng</p>
+                  <p className="font-bold">
+                    <Link
+                      href="/about/abhishikth-veng"
+                      className="hover:text-[var(--accent)]"
+                    >
+                      Abhishikth Veng
+                    </Link>
+                  </p>
                   <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
                     founder ·{" "}
                     <a

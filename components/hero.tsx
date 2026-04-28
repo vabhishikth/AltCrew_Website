@@ -5,11 +5,11 @@ import { motion, AnimatePresence } from "motion/react";
 import { useEffect, useState } from "react";
 
 const heroPhotos = [
-  { src: "/hero/hero-1.png", alt: "AltCrew member training" },
-  { src: "/hero/hero-2.png", alt: "AltCrew member training" },
-  { src: "/hero/hero-3.png", alt: "AltCrew member training" },
-  { src: "/hero/hero-4.png", alt: "AltCrew member training" },
-  { src: "/hero/hero-5.png", alt: "AltCrew member training" },
+  { src: "/hero/hero-1.jpg", alt: "AltCrew member training" },
+  { src: "/hero/hero-2.jpg", alt: "AltCrew member training" },
+  { src: "/hero/hero-3.jpg", alt: "AltCrew member training" },
+  { src: "/hero/hero-4.jpg", alt: "AltCrew member training" },
+  { src: "/hero/hero-5.jpg", alt: "AltCrew member training" },
 ];
 
 const heroCss = `

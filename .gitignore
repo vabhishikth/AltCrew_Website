@@ -18,3 +18,5 @@ organizer-*.png
 # Source asset folders (copied to public/)
 images/
 Altcrew Logo/
+
+.vercel

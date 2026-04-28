@@ -1,0 +1,35 @@
+# AltCrew
+
+> AltCrew is an Indian social fitness app that helps people find a community to train with: running, lifting, yoga, walking, cycling, swimming, anything physical. Strava tells you what you did. AltCrew tells you who you can do it with.
+
+## Launch
+- Date: Sunday, May 31, 2026
+- Event: Vizag Fitness & Flea Fest 2026
+- Venue: Sai Priya Resorts, Visakhapatnam, India
+- Time: 9:00 AM – 10:00 PM
+- App drops: 7:30 PM at the on-stage Founders Q&A
+- Tickets: Sold on BookMyShow.
+
+## Available cities at launch
+- Visakhapatnam (Vizag) only. More cities open as we have the people to support them well.
+
+## Features
+- PacePals: pacing partner matching
+- Flash Album: 24-hour event photo album, unlocks at the event, shareable to Instagram
+- Shoe Locker: gear log
+- Smart Waivers: digital waivers for organizers
+
+## Pricing
+- Free for members
+- Free for community organizers through August 2026
+- Paid organizer tier launches September 2026
+
+## Founder
+- Abhishikth, based in Vizag. Lost 35 kg in a year through walking, weight training, and structured diet, with a coach who believed in him.
+
+## Site
+- Homepage: https://altcrew.in
+- Contact: hello@altcrew.in
+- Instagram: https://instagram.com/altcrew.in
+
+Last updated: 2026-04-27

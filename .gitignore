@@ -1,0 +1,20 @@
+node_modules
+.next
+out
+.env*.local
+.vercel
+*.log
+.DS_Store
+.turbo
+
+# Screenshots from playwright/dev iteration
+hero-*.png
+audsplit.png
+current-hero.png
+full-page.png
+organizer-*.png
+.playwright-mcp/
+
+# Source asset folders (copied to public/)
+images/
+Altcrew Logo/

@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(firecrawl-scrape)",
+      "Skill(firecrawl-scrape:*)",
+      "WebFetch(domain:sweatpals.com)",
+      "WebFetch(domain:hyrox.com)",
+      "WebFetch(domain:peakst8.com)",
+      "WebFetch(domain:www.hyrox.com)",
+      "WebFetch(domain:www.peakst8.com)",
+      "WebSearch",
+      "Bash(npm install *)"
+    ]
+  }
+}

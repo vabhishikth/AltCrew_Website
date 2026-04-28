@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-04-28T04:30:00Z",
+  "title": "Design System: AltCrew",
+  "extensions": {
+    "colorMeta": {
+      "rust": {
+        "role": "primary",
+        "displayName": "Terracotta Rust",
+        "canonical": "#e5572b",
+        "tonalRamp": ["#3a1608", "#5d2210", "#8a3318", "#b8431f", "#e5572b", "#f08661", "#f6b59a", "#fbe1d4"]
+      },
+      "rust-deep": {
+        "role": "primary",
+        "displayName": "Rust Deep",
+        "canonical": "#b8431f"
+      },
+      "lime-vivid": {
+        "role": "secondary",
+        "displayName": "Hi-Vis Lime",
+        "canonical": "#c7ff57",
+        "tonalRamp": ["#2e3a14", "#4a5e1f", "#6e8a30", "#92ad3f", "#b8d549", "#c7ff57", "#dbff8d", "#eeffc7"]
+      },
+      "lime-soft": {
+        "role": "secondary",
+        "displayName": "Lime Soft",
+        "canonical": "#c8e847"
+      },
+      "cyan": {
+        "role": "tertiary",
+        "displayName": "Sea Cyan",
+        "canonical": "#74f1ff"
+      },
+      "gold": {
+        "role": "tertiary",
+        "displayName": "Festival Gold",
+        "canonical": "#ffd904"
+      },
+      "flag-orange": {
+        "role": "tertiary",
+        "displayName": "Flag Orange",
+        "canonical": "#ff4d07"
+      },
+      "hot-pink": {
+        "role": "tertiary",
+        "displayName": "Hot Pink",
+        "canonical": "#ff004d"
+      },
+      "purple-vivid": {
+        "role": "tertiary",
+        "displayName": "Purple Vivid",
+        "canonical": "#cf61ff"
+      },
+      "purple-soft": {
+        "role": "tertiary",
+        "displayName": "Purple Soft",
+        "canonical": "#a974ff"
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Cream Paper",
+        "canonical": "#f2ebdd",
+        "tonalRamp": ["#1a1714", "#2a2620", "#4a463f", "#8b8678", "#c9c2b3", "#d9d2c4", "#ebe3d2", "#f5f2ec"]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Warm Ground",
+        "canonical": "#1a1714"
+      },
+      "ground-elev": {
+        "role": "neutral",
+        "displayName": "Ground Elevated",
+        "canonical": "#221e1a"
+      },
+      "ink-black": {
+        "role": "neutral",
+        "displayName": "Ink Black",
+        "canonical": "#0b0b0b"
+      },
+      "stone-500": {
+        "role": "neutral",
+        "displayName": "Stone Mid",
+        "canonical": "#8b8678"
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero h1 and major section openers." },
+      "impact": { "displayName": "Impact (Figtree 900)", "purpose": "Cinematic full-bleed dark-section headlines only. World-of-movement, audience-split." },
+      "headline": { "displayName": "Headline", "purpose": "Section h2 across all light sections." },
+      "title": { "displayName": "Title", "purpose": "Card titles and pillar titles." },
+      "body": { "displayName": "Body", "purpose": "All paragraph copy. Cap line length 65-75ch." },
+      "label": { "displayName": "Mono Label", "purpose": "Eyebrow labels, badges, section markers, breadcrumbs. Captain's-hand annotation voice." }
+    },
+    "shadows": [
+      { "name": "card-hover", "value": "rgba(149,157,165,0.2) 0px 8px 24px, 0 0 40px rgba(199,255,87,0.15)", "purpose": "Event card hover lift. Lime glow is the AltCrew signature." },
+      { "name": "cta-lift", "value": "0 12px 30px rgba(199,255,87,0.2)", "purpose": "Audience-split CTA hover. Lime-tinted, 2px translateY." }
+    ],
+    "motion": [
+      { "name": "ease-standard", "value": "cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "Default state transitions." },
+      { "name": "ease-out-expo", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Hero word stagger, parallax photo zoom, motion entrances." },
+      { "name": "duration-fast", "value": "150ms", "purpose": "Nav link hover, color shifts." },
+      { "name": "duration-medium", "value": "300ms", "purpose": "Card scale, button press." },
+      { "name": "duration-slow", "value": "800ms", "purpose": "Curtain reveal clip-path wipe." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" },
+      { "name": "container-max", "value": "1440px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Rust pill CTA. The signature accent action. Hero, headers, conversion moments.",
+      "html": "<button class=\"ds-btn-primary\">Find my Crew <span aria-hidden>→</span></button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:8px;background:#e5572b;color:#f2ebdd;border:none;border-radius:9999px;padding:14px 20px;font-family:Geist Sans,sans-serif;font-size:14px;font-weight:500;cursor:pointer;transition:background 200ms cubic-bezier(0.4,0,0.2,1),transform 200ms cubic-bezier(0.4,0,0.2,1)}.ds-btn-primary:hover{background:#b8431f}.ds-btn-primary:active{transform:scale(0.98)}.ds-btn-primary:focus-visible{outline:2px solid #e5572b;outline-offset:3px}"
+    },
+    {
+      "name": "Crew CTA",
+      "kind": "button",
+      "refersTo": "button-cta-lime",
+      "description": "Lime pill on dark surfaces. Audience-split crew side. The 'join' signal.",
+      "html": "<button class=\"ds-btn-cta-lime\">Start exploring <span aria-hidden>→</span></button>",
+      "css": ".ds-btn-cta-lime{display:inline-flex;align-items:center;gap:10px;background:#c7ff57;color:#0b0b0b;border:none;border-radius:9999px;padding:16px 32px;min-height:48px;font-family:Geist Sans,sans-serif;font-size:14px;font-weight:600;cursor:pointer;transition:transform 300ms cubic-bezier(0.4,0,0.2,1),box-shadow 300ms cubic-bezier(0.4,0,0.2,1)}.ds-btn-cta-lime:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(199,255,87,0.2)}.ds-btn-cta-lime:focus-visible{outline:2px solid #c7ff57;outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Outline button. Secondary nav links, organizer alt-CTA.",
+      "html": "<button class=\"ds-btn-ghost\">For organizers</button>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#1a1714;border:1px solid rgba(26,23,20,0.4);border-radius:9999px;padding:14px 20px;font-family:Geist Sans,sans-serif;font-size:14px;font-weight:500;cursor:pointer;transition:border-color 200ms,color 200ms}.ds-btn-ghost:hover{border-color:#e5572b;color:#e5572b}.ds-btn-ghost:active{transform:scale(0.98)}"
+    },
+    {
+      "name": "Eyebrow Label",
+      "kind": "chip",
+      "refersTo": "pill-badge",
+      "description": "Mono uppercase pill. Section marker, captain's-hand annotation. Always 11px Geist Mono tracked-widest.",
+      "html": "<span class=\"ds-eyebrow\">Pre-launch · India · Launching May 31</span>",
+      "css": ".ds-eyebrow{display:inline-flex;align-items:center;gap:12px;background:transparent;color:#8b8678;border:1px solid rgba(26,23,20,0.3);border-radius:9999px;padding:6px 16px;font-family:Geist Mono,ui-monospace,monospace;font-size:11px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;line-height:1}"
+    },
+    {
+      "name": "Event Tag",
+      "kind": "chip",
+      "refersTo": "pill-badge",
+      "description": "Solid color-coded pill on event cards. Color communicates category.",
+      "html": "<span class=\"ds-event-tag\">Running</span>",
+      "css": ".ds-event-tag{display:inline-flex;align-items:center;background:#74f1ff;color:#0a0a0a;border-radius:9999px;padding:6px 14px;font-family:Geist Sans,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase}"
+    },
+    {
+      "name": "Event Card",
+      "kind": "card",
+      "refersTo": "card-event",
+      "description": "Fixed-size event card with photo, gradient overlay, tag, and title. The world-of-movement carousel building block.",
+      "html": "<article class=\"ds-event-card\"><div class=\"ds-event-photo\"></div><div class=\"ds-event-overlay\"><span class=\"ds-event-tag-inline\">Running</span><h3 class=\"ds-event-title\">Sunset Run Club</h3></div></article>",
+      "css": ".ds-event-card{position:relative;width:280px;height:360px;border-radius:16px;overflow:hidden;background:#111;transition:transform 400ms cubic-bezier(0.16,1,0.3,1),box-shadow 400ms}.ds-event-card:hover{transform:scale(1.04);box-shadow:rgba(149,157,165,0.2) 0px 8px 24px,0 0 40px rgba(199,255,87,0.15)}.ds-event-photo{position:absolute;inset:0;background:linear-gradient(135deg,#3f4a2a,#1a1714);background-size:cover}.ds-event-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.35) 45%,transparent 70%);display:flex;flex-direction:column;justify-content:flex-end;padding:18px;gap:10px}.ds-event-tag-inline{align-self:flex-start;background:#74f1ff;color:#0a0a0a;border-radius:9999px;padding:6px 14px;font-family:Geist Sans,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase}.ds-event-title{margin:0;color:#fff;font-family:Geist Sans,sans-serif;font-size:18px;font-weight:700;line-height:1.15;letter-spacing:-0.01em}"
+    },
+    {
+      "name": "Portrait Card",
+      "kind": "card",
+      "refersTo": "card-portrait",
+      "description": "Hero portrait card. 18px radius, hairline border, full-bleed image with inset title block.",
+      "html": "<figure class=\"ds-portrait\"><div class=\"ds-portrait-img\"></div><figcaption class=\"ds-portrait-caption\"><p class=\"ds-portrait-title\">Strength</p><p class=\"ds-portrait-blurb\">Spotters, programs, gym partners.</p></figcaption></figure>",
+      "css": ".ds-portrait{position:relative;width:260px;height:288px;border-radius:18px;overflow:hidden;border:1px solid rgba(26,23,20,0.1);background:#221e1a;margin:0}.ds-portrait-img{position:absolute;inset:0;background:linear-gradient(135deg,#4a463f,#1a1714);opacity:0.85}.ds-portrait-caption{position:absolute;inset-inline:0;bottom:0;padding:12px}.ds-portrait-title,.ds-portrait-blurb{margin:0;background:#1a1714;color:#f2ebdd;font-family:Geist Sans,sans-serif;border-radius:6px;padding:0 14px}.ds-portrait-title{padding-top:10px;font-size:14px;font-weight:600}.ds-portrait-blurb{padding-bottom:10px;color:rgba(242,235,221,0.7);font-size:12px}"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "Honest text input. Cream background, ground text, 10px radius.",
+      "html": "<input class=\"ds-input\" type=\"email\" placeholder=\"you@altcrew.in\" />",
+      "css": ".ds-input{display:block;background:#f2ebdd;color:#1a1714;border:1px solid #d9d2c4;border-radius:10px;padding:12px 16px;font-family:Geist Sans,sans-serif;font-size:15px;width:100%;outline:none;transition:border-color 150ms}.ds-input::placeholder{color:#8b8678}.ds-input:focus-visible{border-color:#e5572b;outline:2px solid #e5572b;outline-offset:2px}"
+    },
+    {
+      "name": "Mono Section Marker",
+      "kind": "custom",
+      "refersTo": "label",
+      "description": "Standalone uppercase tracked-widest label. Used as section eyebrow without a pill.",
+      "html": "<p class=\"ds-mono-marker\">what altcrew does</p>",
+      "css": ".ds-mono-marker{margin:0;font-family:Geist Mono,ui-monospace,monospace;font-size:11px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#4a463f;line-height:1}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Captain's Notebook",
+    "overview": "AltCrew looks the way a club captain's training journal feels. Cream paper, rust ink, hi-vis lime and festival flags. Annotated, not designed. Specific, not staged. Two registers cohabit: the base layer is earthy and quiet (terracotta rust on warm cream, stone neutrals, hand-mono labels in tracked uppercase) where copy lives and trust is built. The event layer is vivid and loud (gold, orange, lime, cyan, hot pink, vivid purple) pulled from the Vizag fitness festival identity. Cards, tags, animated meshes, signal moments. Energy lives there, not throughout. This system rejects the Indian app aesthetic outright: no CRED gradients, no Cult.fit feature stacks, no Bollywood orange-and-gold maximalism, no glassmorphism, no neon-on-black.",
+    "keyCharacteristics": [
+      "Warm cream + terracotta rust + stone neutrals as the resting state",
+      "Hi-vis lime + festival flag accents as event-energy signals",
+      "Geist Sans for everything except mono-label workhorse and Figtree-900 impact moments",
+      "Specific, voiced copy. Sentence fragments OK. Em dashes prohibited.",
+      "Photography over UI. Real training over staged stock."
+    ],
+    "rules": [
+      { "name": "The Two-Tier Rule", "body": "Earthy neutrals carry the page. Festival accents carry the energy. The two tiers do not blur together.", "section": "colors" },
+      { "name": "The One-Vest Rule", "body": "Lime is a safety vest, not a wallpaper. Lime fills cover at most one surface in any viewport.", "section": "colors" },
+      { "name": "The Anti-Gradient Rule", "body": "No background gradients on text containers. No background-clip: text. The conic event-bar functions as a flag, not decoration.", "section": "colors" },
+      { "name": "The Mono-Label Rule", "body": "Eyebrow labels, badges, and section markers are always Geist Mono, 11px, uppercase, tracked-widest.", "section": "typography" },
+      { "name": "The No-Em-Dash Rule", "body": "Em dashes are prohibited in copy. Use commas, colons, semicolons, periods, or parentheses. Also no double-hyphens.", "section": "typography" },
+      { "name": "The 14-Character Headline Rule", "body": "Audience-split and impact headlines wrap at 14 characters max-width. Longer headlines belong in display, not impact.", "section": "typography" },
+      { "name": "The Flat-Until-Hover Rule", "body": "Surfaces have no shadow at rest. Shadows appear only as a state response.", "section": "elevation" },
+      { "name": "The Lime-Tinted Shadow Rule", "body": "When a shadow is required, it carries a lime tint. Pure black shadows look stale and corporate.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use Rust (#e5572b) as the primary accent. Reserve it. If it appears more than twice in a fold, remove one.",
+      "Do use Lime Vivid (#c7ff57) only on the crew CTA, success markers, and event tags. One-vest rule.",
+      "Do use Geist Mono 11px tracked-widest uppercase for every eyebrow label, badge, and section marker.",
+      "Do keep body copy at 17px line-height 1.55, line-length 65-75ch.",
+      "Do use full-pill buttons (border-radius: 9999px). Never partial radii.",
+      "Do use real city names (Vizag, Hyderabad, Bangalore, Mumbai). Specificity is the brand.",
+      "Do use candid training photography. Real people, mid-action, off-center compositions.",
+      "Do lift event cards on hover with a lime-tinted shadow. The glow is the AltCrew signature.",
+      "Do honor prefers-reduced-motion: reduce on every animated surface.",
+      "Do keep touch targets at 48x48px minimum."
+    ],
+    "donts": [
+      "Don't use CRED-style heavy gradients, neon glow, or gradient text (background-clip: text is forbidden).",
+      "Don't stack five Cult.fit-style festival banners above the fold. One festival bar at a time.",
+      "Don't use generic Bollywood orange-and-gold maximalism. Rust is terracotta, not cricket-jersey orange.",
+      "Don't use glassmorphism, decorative blurs, or backdrop-filter as a default.",
+      "Don't clone Strava (black + neon graph) or Whoop (data-forward dark). AltCrew is human-first.",
+      "Don't use stock photography of laughing models in pristine athleisure.",
+      "Don't write 'We're revolutionising your fitness journey' or any startup-speak phrase.",
+      "Don't use em dashes or double-hyphens in copy.",
+      "Don't mix two tier-3 festival colors on the same surface.",
+      "Don't drop ambient pure-black shadows under cards. Always lime-tinted, always state-driven.",
+      "Don't use side-stripe borders as accents. Full borders, background tints, or nothing.",
+      "Don't invent new pill shapes or partial radii."
+    ]
+  }
+}

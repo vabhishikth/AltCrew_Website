@@ -1,0 +1,7 @@
+User-agent: Bytespider
+Disallow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://altcrew.in/sitemap.xml

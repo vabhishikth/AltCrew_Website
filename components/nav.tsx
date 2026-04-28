@@ -36,6 +36,7 @@ export function Nav() {
   }, [open]);
 
   return (
+    <>
     <header className="sticky top-0 z-30 border-b border-hairline bg-[color-mix(in_oklab,var(--bg)_88%,transparent)] backdrop-blur-md">
       <motion.div
         aria-hidden
@@ -126,13 +127,14 @@ export function Nav() {
         </div>
       </div>
 
+      </header>
       {open && (
         <div
           id="mobile-menu"
           role="dialog"
           aria-modal="true"
           aria-label="Site menu"
-          className="fixed inset-0 z-40 bg-bg md:hidden"
+          className="fixed inset-0 z-50 bg-[var(--bg)] md:hidden"
         >
           <div className="container-page flex h-16 items-center justify-between gap-4 border-b border-hairline">
             <Logo className="h-9" />
@@ -191,6 +193,6 @@ export function Nav() {
           </nav>
         </div>
       )}
-    </header>
+    </>
   );
 }

@@ -1,29 +1,19 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { motion, animate, useInView } from "motion/react";
+import { motion } from "motion/react";
 
 type Stat = {
   figure: string;
   label: string;
-  to?: number;
-  suffix?: string;
-  prefix?: string;
-  decimals?: number;
 };
 
 const stats: Stat[] = [
   {
     figure: "2.5M",
-    to: 2.5,
-    suffix: "M",
-    decimals: 1,
     label: "registered runners in India",
   },
   {
     figure: "1,600+",
-    to: 1600,
-    suffix: "+",
     label: "fitness events held nationwide each year",
   },
   {
@@ -31,42 +21,6 @@ const stats: Stat[] = [
     label: "gym penetration across the country",
   },
 ];
-
-function formatNumber(n: number, decimals = 0) {
-  if (decimals > 0) return n.toFixed(decimals);
-  return Math.round(n).toLocaleString("en-IN");
-}
-
-function CountUp({ stat }: { stat: Stat }) {
-  const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true, amount: 0.4 });
-  const [value, setValue] = useState(stat.to ?? 0);
-  const [animated, setAnimated] = useState(false);
-
-  useEffect(() => {
-    if (!inView || stat.to == null || animated) return;
-    setValue(0);
-    setAnimated(true);
-    const controls = animate(0, stat.to, {
-      duration: 1.6,
-      ease: [0.16, 1, 0.3, 1],
-      onUpdate: (v) => setValue(v),
-    });
-    return () => controls.stop();
-  }, [inView, stat.to, animated]);
-
-  if (stat.to == null) {
-    return <span ref={ref}>{stat.figure}</span>;
-  }
-
-  return (
-    <span ref={ref}>
-      {stat.prefix ?? ""}
-      {formatNumber(value, stat.decimals)}
-      {stat.suffix ?? ""}
-    </span>
-  );
-}
 
 export function Stats() {
   return (
@@ -110,7 +64,7 @@ export function Stats() {
                 className="font-mono text-[88px] font-light leading-none tracking-tight md:text-[140px]"
                 style={{ fontFeatureSettings: "'tnum' 1" }}
               >
-                <CountUp stat={s} />
+                <span>{s.figure}</span>
               </div>
               <p className="mt-6 max-w-[24ch] text-lg text-[var(--color-cream)]/85">
                 {s.label}

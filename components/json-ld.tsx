@@ -19,10 +19,7 @@ export const orgSchema = {
   foundingDate: "2026",
   founder: { "@id": "https://altcrew.in/#founder" },
   email: "hello@altcrew.in",
-  sameAs: [
-    "https://instagram.com/altcrew.in",
-    "https://www.linkedin.com/in/abhishikth-vengiteela-4752a182",
-  ],
+  sameAs: ["https://instagram.com/altcrew.in"],
   description:
     "AltCrew is an Indian social fitness app helping people find a community to train with: running, lifting, yoga, cycling, swimming, walking, and more.",
   areaServed: { "@type": "Country", name: "India" },
@@ -95,7 +92,7 @@ export const eventSchema = {
     price: "0",
     priceCurrency: "INR",
     url: "https://altcrew.in/#waitlist",
-    availability: "https://schema.org/InStock",
+    availability: "https://schema.org/PreOrder",
     validFrom: "2026-04-28",
   },
 };
@@ -134,10 +131,7 @@ export const founderSchema = {
   worksFor: { "@id": "https://altcrew.in/#organization" },
   description:
     "Founder of AltCrew. Lost 35 kg in a year through walking, weight training, and structured nutrition guided by a coach.",
-  sameAs: [
-    "https://www.linkedin.com/in/abhishikth-vengiteela-4752a182",
-    "https://instagram.com/altcrew.in",
-  ],
+  sameAs: ["https://www.linkedin.com/in/abhishikth-vengiteela-4752a182"],
   address: {
     "@type": "PostalAddress",
     addressLocality: "Visakhapatnam",

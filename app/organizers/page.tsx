@@ -99,16 +99,6 @@ export default function OrganizersPage() {
               </a>
             </div>
 
-            <div className="mt-10">
-              <a
-                href="mailto:hello@altcrew.in?subject=Organizer%20interest"
-                className="inline-flex items-center gap-2 rounded-full bg-[var(--color-cream)] px-6 py-4 text-base font-medium text-[var(--color-ground)] transition hover:bg-[var(--color-lime)] active:scale-[0.98]"
-              >
-                Run a community? Get in touch
-                <span aria-hidden>→</span>
-              </a>
-            </div>
-
             <div className="mt-20 grid gap-12 md:grid-cols-12">
               <aside className="md:col-span-3">
                 <p className="font-mono text-[11px] uppercase tracking-widest text-[var(--color-cream)]/60">

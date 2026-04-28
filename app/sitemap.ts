@@ -4,7 +4,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://altcrew.in";
   return [
     { url: `${base}/`, lastModified: new Date("2026-04-28"), changeFrequency: "weekly", priority: 1 },
-    { url: `${base}/find`, lastModified: new Date("2026-04-28"), changeFrequency: "weekly", priority: 0.7 },
     { url: `${base}/download`, lastModified: new Date("2026-04-28"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/learn`, lastModified: new Date("2026-04-28"), changeFrequency: "weekly", priority: 0.8 },
     {

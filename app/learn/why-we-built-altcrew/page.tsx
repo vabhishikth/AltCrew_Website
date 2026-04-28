@@ -96,7 +96,15 @@ export default function Post() {
                 <div>
                   <p className="font-bold">Abhishikth Veng</p>
                   <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
-                    founder
+                    founder ·{" "}
+                    <a
+                      href="https://www.linkedin.com/in/abhishikth-vengiteela-4752a182"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline decoration-[var(--accent)] decoration-1 underline-offset-2 hover:text-[var(--accent)]"
+                    >
+                      LinkedIn
+                    </a>
                   </p>
                 </div>
               </div>
@@ -253,8 +261,8 @@ export default function Post() {
                 <p className="mt-4">
                   The app launches Sunday May 31, 2026 at 7:30 PM, on
                   stage at the Vizag Fitness and Flea Fest. iOS and
-                  Android, same day. Free for members. Free for
-                  organizers through August 2026.
+                  Android, same day. Free for members. Free for clubs.
+                  Paid events pay a small commission on ticket sales.
                 </p>
                 <p className="mt-4">
                   Drop your email and city in the{" "}

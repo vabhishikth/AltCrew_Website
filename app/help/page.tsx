@@ -19,7 +19,7 @@ const helpFaqs = [
   },
   {
     q: "Is AltCrew free?",
-    a: "Yes for members, always. Community organizers use it free through August 2026. A paid organizer tier launches September 2026 with INR pricing announced shortly.",
+    a: "Yes for members, always. Free for community organizers running a club. The only time AltCrew charges is on paid event ticket sales — a small commission on what is sold. No platform fees, no subscriptions.",
   },
   {
     q: "How do I join the waitlist?",
@@ -31,7 +31,7 @@ const helpFaqs = [
   },
   {
     q: "I run a club. How do I list it?",
-    a: "Email hello@altcrew.in or use the host page. We onboard you free through August 2026.",
+    a: "Email hello@altcrew.in or use the host page. Listing and running your club are free. Commission applies only when you sell tickets to a paid event.",
   },
   {
     q: "How do I delete my data?",

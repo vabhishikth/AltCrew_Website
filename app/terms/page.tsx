@@ -63,9 +63,9 @@ export default function Terms() {
                     <h2 className="text-headline font-bold">What you get</h2>
                     <p className="mt-3">
                       Use of the AltCrew website, the AltCrew mobile app
-                      (iOS and Android, launching May 31, 2026), and any
-                      organizer tools provided to you under our pre-launch
-                      free tier through August 2026.
+                      (iOS and Android, launching May 31, 2026), and the
+                      organizer tools needed to run a fitness club or host
+                      one-time events.
                     </p>
                   </section>
 
@@ -121,11 +121,13 @@ export default function Terms() {
                   <section>
                     <h2 className="text-headline font-bold">Pricing changes</h2>
                     <p className="mt-3">
-                      Members use AltCrew free, always. Organizers use it
-                      free through August 2026. The paid organizer tier
-                      launches September 2026 with INR pricing announced
-                      shortly. We will email all active organizers thirty
-                      days before any pricing change takes effect.
+                      Members use AltCrew free, always. Running a club is
+                      free. AltCrew takes a small commission on ticket sales
+                      for paid events — that is the only charge to
+                      organizers. No platform fees, no subscriptions. We
+                      will email all active organizers thirty days before any
+                      change to the commission rate or pricing model takes
+                      effect.
                     </p>
                   </section>
 

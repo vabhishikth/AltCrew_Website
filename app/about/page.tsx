@@ -76,7 +76,15 @@ export default function AboutPage() {
                     <div>
                       <div className="font-bold">Abhishikth Veng</div>
                       <div className="font-mono text-[11px] uppercase tracking-widest text-muted">
-                        founder
+                        founder ·{" "}
+                        <a
+                          href="https://www.linkedin.com/in/abhishikth-vengiteela-4752a182"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline decoration-[var(--accent)] decoration-1 underline-offset-2 hover:text-[var(--accent)]"
+                        >
+                          LinkedIn
+                        </a>
                       </div>
                     </div>
                   </div>

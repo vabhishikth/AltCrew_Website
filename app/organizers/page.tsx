@@ -8,7 +8,7 @@ import { JsonLd } from "@/components/json-ld";
 export const metadata: Metadata = {
   title: "Host a club",
   description:
-    "Run your fitness club without spreadsheets. Schedules, RSVPs, digital waivers, group photos, gear tracking, member messaging. Free for community organizers.",
+    "Run your fitness club without spreadsheets. Schedules, RSVPs, digital waivers, group photos, gear tracking, member messaging. Free for clubs; small commission only on paid event ticket sales.",
   alternates: { canonical: "https://altcrew.in/organizers" },
 };
 
@@ -25,7 +25,8 @@ const serviceSchema = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "INR",
-    description: "Free for community organizers",
+    description:
+      "Free for community organizers; AltCrew takes a small commission only on paid event ticket sales.",
   },
 };
 
@@ -65,8 +66,8 @@ export default function OrganizersPage() {
             <p className="mt-6 max-w-[60ch] text-lg text-[var(--color-cream)]/85 md:text-xl">
               AltCrew gives community organizers the tools to run a club
               without spreadsheets, group-chat chaos, or three different
-              apps duct-taped together. Free for organizers, until further
-              notice.
+              apps duct-taped together. Free to run your club. Paid events
+              pay a small commission on ticket sales. Nothing else.
             </p>
 
             <div className="mt-10 max-w-[68ch] space-y-5 text-base text-[var(--color-cream)]/85 md:text-lg">
@@ -167,14 +168,14 @@ export default function OrganizersPage() {
               </aside>
               <div className="md:col-span-9 md:pl-6">
                 <h2 className="text-display max-w-[20ch] font-bold">
-                  Free for organizers. Until further notice.
+                  Free for clubs. Commission only on paid tickets.
                 </h2>
                 <p className="mt-6 max-w-[60ch] text-lg text-[var(--color-cream)]/85 md:text-xl">
-                  Every feature on this page is free for community organizers
-                  on launch and stays free until we tell you otherwise. No
-                  credit card. No expiring trial. No paywalled feature buried
-                  three taps deep. We will be loud and clear well in advance
-                  of any change.
+                  Running a recurring club is free, forever. The only time
+                  AltCrew charges anything is when you sell tickets to a paid
+                  event — and then it is a small commission on those sales,
+                  not a platform fee or a subscription. No credit card. No
+                  expiring trial. No paywalled feature.
                 </p>
               </div>
             </div>

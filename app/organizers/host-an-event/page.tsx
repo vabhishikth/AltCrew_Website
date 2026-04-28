@@ -8,7 +8,7 @@ import { JsonLd } from "@/components/json-ld";
 export const metadata: Metadata = {
   title: "Host an event",
   description:
-    "Host a one-time fitness event on AltCrew. Festivals, races, retreats, charity runs. Ticketing, RSVPs, digital waivers, group albums, on-site check-in. Free for organizers.",
+    "Host a one-time fitness event on AltCrew. Festivals, races, retreats, charity runs. Ticketing, RSVPs, digital waivers, group albums, on-site check-in. Free events free. Paid events: small commission on ticket sales.",
   alternates: { canonical: "https://altcrew.in/organizers/host-an-event" },
 };
 
@@ -25,7 +25,8 @@ const serviceSchema = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "INR",
-    description: "Free for event organizers",
+    description:
+      "Free events are free. Paid events: AltCrew takes a small commission on ticket sales.",
   },
 };
 
@@ -158,12 +159,14 @@ export default function HostAnEventPage() {
                 pricing
               </p>
               <h2 className="mt-3 text-display font-bold">
-                Free for hosts. Until further notice.
+                Free events: free. Paid events: a small commission.
               </h2>
               <p className="mt-6 text-lg text-fg/85">
-                Zero platform fees on free or paid events. Use every tool on
-                this page without a credit card or a trial clock. We will
-                tell you well in advance if anything ever changes.
+                Free events stay free, forever. For paid events, AltCrew
+                takes a small commission on ticket sales — that is the only
+                way we charge organizers. No platform fees, no monthly
+                subscription, no credit card to start. You only pay when you
+                sell tickets, and only out of what you sell.
               </p>
             </div>
           </div>

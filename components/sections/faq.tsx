@@ -10,7 +10,7 @@ const faqs = [
   },
   {
     q: "Is AltCrew free?",
-    a: "Yes. Free for members, always. Free for community organizers, until further notice.",
+    a: "Yes. Free for members, always. Free for community organizers running a club. The only time we charge is on paid event ticket sales — a small commission on what you sell. No platform fees, no subscriptions.",
   },
   {
     q: "What kinds of fitness does it cover?",
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "I run a club. How do I list it?",
-    a: "Email hello@altcrew.in or use the organizer link in the section above. We onboard organizers free, until further notice.",
+    a: "Email hello@altcrew.in or use the organizer link in the section above. Listing and running your club are free. We only take a commission if you sell tickets to a paid event.",
   },
   {
     q: "When does the app launch?",

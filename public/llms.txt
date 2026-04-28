@@ -21,10 +21,12 @@
 
 ## Pricing
 - Free for members, always.
-- Free for community organizers until further notice.
+- Free for community organizers running a club.
+- For paid events: AltCrew takes a small commission on ticket sales. No platform fees, no subscriptions.
 
 ## Founder
 - Abhishikth Veng, based in Visakhapatnam. Lost 35 kg in a year through walking, weight training, and structured diet, guided by a coach who believed in him. AltCrew exists for people who never felt welcome in fitness rooms.
+- LinkedIn: https://www.linkedin.com/in/abhishikth-vengiteela-4752a182
 
 ## Site
 - Homepage: https://altcrew.in

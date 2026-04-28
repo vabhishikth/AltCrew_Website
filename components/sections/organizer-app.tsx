@@ -129,7 +129,7 @@ export function OrganizerApp() {
             transition={{ delay: 0.15, duration: 0.6 }}
           >
             Schedules, RSVPs, check-ins, waivers, photos, pace groups. Handled.
-            Free for organizers through August 2026.
+            Free for clubs. Paid events pay a small commission on tickets sold.
           </motion.p>
 
           <motion.a

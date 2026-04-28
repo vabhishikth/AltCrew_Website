@@ -19,7 +19,10 @@ export const orgSchema = {
   foundingDate: "2026",
   founder: { "@id": "https://altcrew.in/#founder" },
   email: "hello@altcrew.in",
-  sameAs: ["https://instagram.com/altcrew.in"],
+  sameAs: [
+    "https://instagram.com/altcrew.in",
+    "https://www.linkedin.com/in/abhishikth-vengiteela-4752a182",
+  ],
   description:
     "AltCrew is an Indian social fitness app helping people find a community to train with: running, lifting, yoga, cycling, swimming, walking, and more.",
   areaServed: { "@type": "Country", name: "India" },
@@ -131,7 +134,10 @@ export const founderSchema = {
   worksFor: { "@id": "https://altcrew.in/#organization" },
   description:
     "Founder of AltCrew. Lost 35 kg in a year through walking, weight training, and structured nutrition guided by a coach.",
-  sameAs: ["https://instagram.com/altcrew.in"],
+  sameAs: [
+    "https://www.linkedin.com/in/abhishikth-vengiteela-4752a182",
+    "https://instagram.com/altcrew.in",
+  ],
   address: {
     "@type": "PostalAddress",
     addressLocality: "Visakhapatnam",
@@ -157,7 +163,7 @@ export const faqSchema = {
       name: "Is AltCrew free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Free for members and free for community organizers until further notice.",
+        text: "Yes. Free for members, always. Free for community organizers running a club. The only time AltCrew charges is on paid event ticket sales — a small commission on what is sold. No platform fees, no subscriptions.",
       },
     },
     {

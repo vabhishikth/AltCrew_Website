@@ -154,6 +154,135 @@ export default function HostAnEventPage() {
               ))}
             </div>
 
+            <div className="mt-20 grid gap-12 md:grid-cols-12">
+              <aside className="md:col-span-3">
+                <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
+                  the timeline
+                </p>
+              </aside>
+              <div className="md:col-span-9 md:pl-6 max-w-[68ch] space-y-5 text-base text-fg/85 md:text-lg">
+                <h2 className="text-display max-w-[24ch] font-bold text-fg">
+                  Four weeks out, on a 200-runner 5K, day by day.
+                </h2>
+                <p>
+                  Take a 200-person community 5K on a beachside boulevard.
+                  Course mapped, sponsors lined up, permits in flight. Here
+                  is what AltCrew handles between &ldquo;event live&rdquo;
+                  and &ldquo;runners crossing the finish line.&rdquo;
+                </p>
+                <p>
+                  <strong className="text-fg">Week minus four.</strong> You
+                  spin up the event in two minutes. Set capacity at 200.
+                  Pick your tier mix: 30 free spots for community partners,
+                  150 paid at &#8377;500 each, 20 sponsor comps. Add a
+                  custom waiver covering route, weather, and medical
+                  consent. Drop a 500-word event description with start
+                  time, route map, parking, and gear advice. Hit publish.
+                  The event is live and shareable.
+                </p>
+                <p>
+                  <strong className="text-fg">Weeks minus three to
+                  minus one.</strong> Tickets sell in real time on the
+                  dashboard. Members who already have a waiver on file
+                  skip the form on signup. Anyone with questions emails
+                  the address you set in the listing — replies thread
+                  back to you. Two days before the race, you broadcast a
+                  pre-event message: bib pickup window, weather call,
+                  start-line landmark. It lands in everyone&rsquo;s app,
+                  inbox, or both, depending on their notification
+                  settings.
+                </p>
+                <p>
+                  <strong className="text-fg">Race morning.</strong> Three
+                  volunteers at the check-in table tap each runner&rsquo;s
+                  name on a tablet to mark them in. No printed bib list,
+                  no clipboard, no &ldquo;wait, are you on the list?&rdquo;
+                  conversations. The Flash Album opens at the gun. Anyone
+                  on-site can drop in photos. The shared album updates
+                  live for the next 24 hours, then locks.
+                </p>
+                <p>
+                  <strong className="text-fg">Sunday evening.</strong>
+                  The recap page is auto-generated: top photos, finishers,
+                  pace splits if you imported timing data, sponsor logos,
+                  and a one-tap &ldquo;join the next one&rdquo; button
+                  that pre-fills your next listed event. You share the
+                  recap link to your community. People who missed the
+                  race see what they missed. The next event sells faster
+                  than this one did.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-20 grid gap-12 md:grid-cols-12">
+              <aside className="md:col-span-3">
+                <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
+                  organizer FAQ
+                </p>
+              </aside>
+              <div className="md:col-span-9 md:pl-6 max-w-[68ch] space-y-6">
+                <div>
+                  <h3 className="text-headline font-bold text-fg">
+                    What is the commission rate on paid event ticket sales?
+                  </h3>
+                  <p className="mt-2 text-base text-fg/85 md:text-lg">
+                    AltCrew takes a small commission on tickets sold for
+                    paid events. The exact rate is shared with you when
+                    we onboard your event so you can price tickets with
+                    full visibility. There are no platform fees, no
+                    monthly subscriptions, and no charges on free events.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-headline font-bold text-fg">
+                    Do attendees need to download the app to RSVP?
+                  </h3>
+                  <p className="mt-2 text-base text-fg/85 md:text-lg">
+                    No. Anyone can register through the web. The app is
+                    optional and unlocks the deeper experience — Flash
+                    Album, pace pairing, member messaging — but a
+                    first-time attendee can buy a ticket, sign a waiver,
+                    and show up without ever installing anything.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-headline font-bold text-fg">
+                    Can a runner re-use a waiver across different events?
+                  </h3>
+                  <p className="mt-2 text-base text-fg/85 md:text-lg">
+                    Yes. A waiver signed for one organizer&rsquo;s event
+                    is logged on the runner&rsquo;s profile. The next
+                    time they register for an event with the same waiver
+                    template, the form is auto-filled and a one-tap
+                    confirmation finishes the signing.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-headline font-bold text-fg">
+                    What happens if I cancel a paid event?
+                  </h3>
+                  <p className="mt-2 text-base text-fg/85 md:text-lg">
+                    You issue full refunds to attendees from the
+                    dashboard in a single action. The commission is
+                    refunded along with the ticket cost — you do not pay
+                    AltCrew for tickets that were ultimately refunded.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-headline font-bold text-fg">
+                    Can I cap capacity and run a waitlist?
+                  </h3>
+                  <p className="mt-2 text-base text-fg/85 md:text-lg">
+                    Yes. Set capacity at any number. Once tickets sell
+                    out, registration switches to a waitlist. If a
+                    refund frees up a spot, the next person on the
+                    waitlist gets a notification with a 24-hour window
+                    to claim it.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div className="mt-20 max-w-[60ch] border-t border-hairline pt-10">
               <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
                 pricing

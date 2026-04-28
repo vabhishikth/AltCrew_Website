@@ -48,6 +48,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: `${base}/learn/how-to-start-a-fitness-club-from-scratch-india`,
+      lastModified: new Date("2026-04-28"),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    { url: `${base}/about/abhishikth-veng`, lastModified: new Date("2026-04-28"), changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/organizers`, lastModified: new Date("2026-04-28"), changeFrequency: "monthly", priority: 0.8 },
     {
       url: `${base}/organizers/host-an-event`,

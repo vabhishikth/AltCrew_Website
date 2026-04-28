@@ -81,7 +81,7 @@ export default function Post() {
                 hard. They quit because they tried to start alone.
               </p>
               <p className="mt-4 font-mono text-[11px] uppercase tracking-widest text-muted">
-                By Abhishikth Veng, founder of AltCrew
+                By <Link href="/about/abhishikth-veng" className="underline decoration-[var(--accent)] decoration-1 underline-offset-2 hover:text-[var(--accent)]">Abhishikth Veng</Link>, founder of AltCrew
               </p>
             </header>
 

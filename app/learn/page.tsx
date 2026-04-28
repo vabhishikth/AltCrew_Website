@@ -69,6 +69,14 @@ const posts = [
     date: "2026-06-08",
     readMin: 11,
   },
+  {
+    slug: "how-to-start-a-fitness-club-from-scratch-india",
+    title: "How to start a fitness club from scratch in India",
+    blurb:
+      "Pick one discipline, lock the time and place, find your first ten through people you already know. The playbook for going from zero to a self-sustaining crew.",
+    date: "2026-04-28",
+    readMin: 11,
+  },
 ];
 
 const blogSchema = {

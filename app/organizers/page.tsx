@@ -137,6 +137,56 @@ export default function OrganizersPage() {
               </div>
             </div>
 
+            <div className="mt-20 grid gap-12 md:grid-cols-12">
+              <aside className="md:col-span-3">
+                <p className="font-mono text-[11px] uppercase tracking-widest text-[var(--color-cream)]/60">
+                  another scene
+                </p>
+              </aside>
+              <div className="md:col-span-9 md:pl-6 max-w-[68ch] space-y-5 text-base text-[var(--color-cream)]/90 md:text-lg">
+                <h2 className="text-display max-w-[22ch] font-bold text-[var(--color-cream)]">
+                  A 5K race captain, four weeks out, no spreadsheets.
+                </h2>
+                <p>
+                  A first-time race captain wants to put on a 200-runner 5K
+                  on a beachside boulevard. Course mapped, sponsors lined up,
+                  permits in flight. The work that actually breaks first-time
+                  hosts is everything between &ldquo;event live&rdquo; and
+                  &ldquo;runners standing at the start line.&rdquo; Tickets,
+                  waivers, RSVPs, day-of check-in, last-minute weather
+                  updates, the recap. Most captains stitch this together
+                  across a ticketing site, a Google Form, a printed bib list,
+                  a shared photo folder, and a panicked late-night message
+                  thread. Half of the work happens twice. Some of it never
+                  happens at all.
+                </p>
+                <p>
+                  On AltCrew, the captain spins up the event in the same app
+                  her crew already uses. Free tier or paid tier, capacity
+                  cap, members-only window for the first 48 hours, then open
+                  registration. Custom waiver appears on signup; everyone
+                  signs it once, then never sees it again. Pre-event
+                  broadcast goes to all RSVPs in one tap on race-eve when
+                  the start time shifts by fifteen minutes. Day-of, the
+                  volunteers check runners in by tapping a name on a tablet
+                  rather than hunting through a printed sheet. The Flash
+                  Album opens at the gun, every runner drops in their
+                  photos, and the recap page generates itself by Sunday
+                  evening with finishers, photos, and a one-tap link to
+                  the next event.
+                </p>
+                <p>
+                  Four weeks out, total admin time is under five hours
+                  spread across the month — most of it spent on the parts
+                  that actually need a human, like sponsor coordination
+                  and route safety. The recap doubles as the marketing for
+                  the next race. Hosts who run their second event on
+                  AltCrew sell it faster than the first, because the
+                  proof is already on the recap page.
+                </p>
+              </div>
+            </div>
+
             <ul className="mt-20 grid gap-8 md:max-w-3xl md:grid-cols-2">
               {items.map(([k, v]) => (
                 <li key={k}>

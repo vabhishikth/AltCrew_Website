@@ -10,7 +10,7 @@ const faqs = [
   },
   {
     q: "Is AltCrew free?",
-    a: "Yes, for members. Always. Community organizers also use it free through August 2026; a paid organizer tier launches September 2026 with pricing announced shortly.",
+    a: "Yes. Free for members, always. Free for community organizers, until further notice.",
   },
   {
     q: "What kinds of fitness does it cover?",
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "I run a club. How do I list it?",
-    a: "Email hello@altcrew.in or use the organizer link in the section above. We'll onboard you free through August 2026.",
+    a: "Email hello@altcrew.in or use the organizer link in the section above. We onboard organizers free, until further notice.",
   },
   {
     q: "When does the app launch?",

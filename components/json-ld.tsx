@@ -11,21 +11,13 @@ export function JsonLd({ data }: { data: Json }) {
 
 export const orgSchema = {
   "@context": "https://schema.org",
+  "@id": "https://altcrew.in/#organization",
   "@type": "Organization",
   name: "AltCrew",
   url: "https://altcrew.in",
   logo: "https://altcrew.in/altcrew-logo.svg",
-  founder: {
-    "@type": "Person",
-    name: "Abhishikth",
-    jobTitle: "Founder",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Visakhapatnam",
-      addressRegion: "Andhra Pradesh",
-      addressCountry: "IN",
-    },
-  },
+  foundingDate: "2026",
+  founder: { "@id": "https://altcrew.in/#founder" },
   email: "hello@altcrew.in",
   sameAs: ["https://instagram.com/altcrew.in"],
   description:
@@ -39,13 +31,14 @@ export const websiteSchema = {
   name: "AltCrew",
   url: "https://altcrew.in",
   inLanguage: "en-IN",
-  publisher: { "@type": "Organization", name: "AltCrew" },
+  publisher: { "@id": "https://altcrew.in/#organization" },
 };
 
 export const appSchema = {
   "@context": "https://schema.org",
   "@type": "MobileApplication",
   name: "AltCrew",
+  url: "https://altcrew.in/download",
   operatingSystem: "iOS, Android",
   applicationCategory: "HealthApplication",
   description:
@@ -94,6 +87,14 @@ export const eventSchema = {
     "Day-long fitness festival and flea market in Visakhapatnam. AltCrew app launches at 7:30 PM during the on-stage Founders Q&A.",
   organizer: { "@type": "Organization", name: "AltCrew Technologies" },
   performer: { "@type": "Organization", name: "AltCrew" },
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "INR",
+    url: "https://altcrew.in/#waitlist",
+    availability: "https://schema.org/InStock",
+    validFrom: "2026-04-28",
+  },
 };
 
 export const founderArticleSchema = {
@@ -101,12 +102,8 @@ export const founderArticleSchema = {
   "@type": "Article",
   headline: "A note from the founder",
   about:
-    "The personal story behind AltCrew, an Indian social fitness app. Founder Abhishikth on losing 35 kg in a year, the coach who believed in him, and why AltCrew exists for people who never felt welcome in fitness rooms.",
-  author: {
-    "@type": "Person",
-    name: "Abhishikth",
-    jobTitle: "Founder",
-  },
+    "The personal story behind AltCrew, an Indian social fitness app. Founder Abhishikth Veng on losing 35 kg in a year, the coach who believed in him, and why AltCrew exists for people who never felt welcome in fitness rooms.",
+  author: { "@id": "https://altcrew.in/#founder" },
   publisher: {
     "@type": "Organization",
     name: "AltCrew",
@@ -117,17 +114,21 @@ export const founderArticleSchema = {
   },
   image: "https://altcrew.in/portraits/founder.jpeg",
   datePublished: "2026-04-27",
-  dateModified: "2026-04-27",
-  mainEntityOfPage: "https://altcrew.in/#founder",
+  dateModified: "2026-04-28",
+  mainEntityOfPage: "https://altcrew.in/learn/why-we-built-altcrew",
   inLanguage: "en-IN",
 };
 
 export const founderSchema = {
   "@context": "https://schema.org",
+  "@id": "https://altcrew.in/#founder",
   "@type": "Person",
-  name: "Abhishikth",
+  name: "Abhishikth Veng",
+  givenName: "Abhishikth",
+  familyName: "Veng",
   jobTitle: "Founder",
-  worksFor: { "@type": "Organization", name: "AltCrew" },
+  url: "https://altcrew.in/about",
+  worksFor: { "@id": "https://altcrew.in/#organization" },
   description:
     "Founder of AltCrew. Lost 35 kg in a year through walking, weight training, and structured nutrition guided by a coach.",
   sameAs: ["https://instagram.com/altcrew.in"],
@@ -156,7 +157,7 @@ export const faqSchema = {
       name: "Is AltCrew free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, for members. Always. Community organizers also use it free through August 2026; a paid organizer tier launches September 2026.",
+        text: "Yes. Free for members and free for community organizers until further notice.",
       },
     },
     {

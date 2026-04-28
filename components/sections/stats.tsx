@@ -40,17 +40,20 @@ function formatNumber(n: number, decimals = 0) {
 function CountUp({ stat }: { stat: Stat }) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, amount: 0.4 });
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(stat.to ?? 0);
+  const [animated, setAnimated] = useState(false);
 
   useEffect(() => {
-    if (!inView || stat.to == null) return;
+    if (!inView || stat.to == null || animated) return;
+    setValue(0);
+    setAnimated(true);
     const controls = animate(0, stat.to, {
       duration: 1.6,
       ease: [0.16, 1, 0.3, 1],
       onUpdate: (v) => setValue(v),
     });
     return () => controls.stop();
-  }, [inView, stat.to]);
+  }, [inView, stat.to, animated]);
 
   if (stat.to == null) {
     return <span ref={ref}>{stat.figure}</span>;

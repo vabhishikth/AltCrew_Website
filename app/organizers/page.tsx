@@ -8,7 +8,7 @@ import { JsonLd } from "@/components/json-ld";
 export const metadata: Metadata = {
   title: "Host a club",
   description:
-    "Run your fitness club without spreadsheets. Schedules, RSVPs, digital waivers, group photos, gear tracking, member messaging. Free for organizers through August 2026.",
+    "Run your fitness club without spreadsheets. Schedules, RSVPs, digital waivers, group photos, gear tracking, member messaging. Free for community organizers.",
   alternates: { canonical: "https://altcrew.in/organizers" },
 };
 
@@ -25,8 +25,7 @@ const serviceSchema = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "INR",
-    priceValidUntil: "2026-08-31",
-    description: "Free for organizers through August 2026",
+    description: "Free for community organizers",
   },
 };
 
@@ -65,9 +64,29 @@ export default function OrganizersPage() {
 
             <p className="mt-6 max-w-[60ch] text-lg text-[var(--color-cream)]/85 md:text-xl">
               AltCrew gives community organizers the tools to run a club
-              without spreadsheets. Free through August 2026. Paid tier
-              launches September 2026, INR-priced.
+              without spreadsheets, group-chat chaos, or three different
+              apps duct-taped together. Free for organizers, until further
+              notice.
             </p>
+
+            <div className="mt-10 max-w-[68ch] space-y-5 text-base text-[var(--color-cream)]/85 md:text-lg">
+              <p>
+                If you captain a run club, teach yoga out of a park, run a
+                weekend HIIT crew, or coach a neighbourhood pickleball ladder,
+                you already do the hardest part: showing up, week after week,
+                and getting other people to show up with you. The boring part,
+                the admin, is what burns most organizers out long before the
+                community does.
+              </p>
+              <p>
+                AltCrew handles the boring part. Schedules in one place. RSVPs
+                that you can actually trust. Waivers signed once and reused
+                across every event a member ever joins. A photo album that
+                opens at the meet, stays open for twenty-four hours, and gives
+                your members something to share. Pace pairings done in seconds
+                instead of in your head at 5:30 AM.
+              </p>
+            </div>
 
             <div className="mt-10">
               <a
@@ -77,6 +96,54 @@ export default function OrganizersPage() {
                 Run a community? Get in touch
                 <span aria-hidden>→</span>
               </a>
+            </div>
+
+            <div className="mt-10">
+              <a
+                href="mailto:hello@altcrew.in?subject=Organizer%20interest"
+                className="inline-flex items-center gap-2 rounded-full bg-[var(--color-cream)] px-6 py-4 text-base font-medium text-[var(--color-ground)] transition hover:bg-[var(--color-lime)] active:scale-[0.98]"
+              >
+                Run a community? Get in touch
+                <span aria-hidden>→</span>
+              </a>
+            </div>
+
+            <div className="mt-20 grid gap-12 md:grid-cols-12">
+              <aside className="md:col-span-3">
+                <p className="font-mono text-[11px] uppercase tracking-widest text-[var(--color-cream)]/60">
+                  what it looks like
+                </p>
+              </aside>
+              <div className="md:col-span-9 md:pl-6 max-w-[68ch] space-y-5 text-base text-[var(--color-cream)]/90 md:text-lg">
+                <h2 className="text-display max-w-[22ch] font-bold text-[var(--color-cream)]">
+                  Sixty members, one captain, twenty minutes a week.
+                </h2>
+                <p>
+                  Picture a captain of a sixty-member run club. Three pace
+                  groups. A Saturday long run, a Tuesday tempo session, a
+                  Thursday recovery jog. Before AltCrew, that is one calendar
+                  invite, two WhatsApp groups, a Google Form for waivers, a
+                  shared Drive of photos nobody ever opens, and a Notes app
+                  full of names with question marks next to them.
+                </p>
+                <p>
+                  After AltCrew, it is one screen. The captain posts the
+                  Saturday run on Sunday night. Members RSVP in the app. New
+                  joiners sign a waiver once, ever; it follows them to every
+                  event they ever attend with any crew that uses AltCrew.
+                  Pace groups auto-suggest based on each runner&rsquo;s
+                  recent kilometres logged. The post-run Flash Album opens
+                  the moment the run starts and closes twenty-four hours
+                  later, so people actually post their photos that day
+                  instead of saving them for &ldquo;later.&rdquo;
+                </p>
+                <p>
+                  Twenty minutes a week of admin instead of three hours.
+                  And, more importantly, members who keep coming back because
+                  the experience between events feels as cared-for as the
+                  events themselves.
+                </p>
+              </div>
             </div>
 
             <ul className="mt-20 grid gap-8 md:max-w-3xl md:grid-cols-2">
@@ -100,13 +167,14 @@ export default function OrganizersPage() {
               </aside>
               <div className="md:col-span-9 md:pl-6">
                 <h2 className="text-display max-w-[20ch] font-bold">
-                  Free through August 2026.
+                  Free for organizers. Until further notice.
                 </h2>
                 <p className="mt-6 max-w-[60ch] text-lg text-[var(--color-cream)]/85 md:text-xl">
-                  Every organizer who joins before September 2026 gets the
-                  full toolkit free for the entire pre-launch and early-growth
-                  window. Paid tier from September 2026 onwards. Prices
-                  announced shortly. INR-billed.
+                  Every feature on this page is free for community organizers
+                  on launch and stays free until we tell you otherwise. No
+                  credit card. No expiring trial. No paywalled feature buried
+                  three taps deep. We will be loud and clear well in advance
+                  of any change.
                 </p>
               </div>
             </div>

@@ -5,11 +5,11 @@ import { motion, AnimatePresence } from "motion/react";
 import { useEffect, useState } from "react";
 
 const heroPhotos = [
-  { src: "/hero/hero-1.jpg", alt: "AltCrew member training" },
-  { src: "/hero/hero-2.jpg", alt: "AltCrew member training" },
-  { src: "/hero/hero-3.jpg", alt: "AltCrew member training" },
-  { src: "/hero/hero-4.jpg", alt: "AltCrew member training" },
-  { src: "/hero/hero-5.jpg", alt: "AltCrew member training" },
+  { src: "/hero/hero-1.jpg", alt: "Group of runners celebrating after a sunrise run, palm-lined boulevard, India" },
+  { src: "/hero/hero-2.jpg", alt: "Outdoor strength workout with kettlebells in a public park" },
+  { src: "/hero/hero-3.jpg", alt: "Crew of cyclists pacing together on a coastal road" },
+  { src: "/hero/hero-4.jpg", alt: "Yoga group holding a pose at a beachside boardwalk at golden hour" },
+  { src: "/hero/hero-5.jpg", alt: "Runners high-fiving at the finish of a community 5K event" },
 ];
 
 const heroCss = `

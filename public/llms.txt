@@ -1,6 +1,6 @@
 # AltCrew
 
-> AltCrew is an Indian social fitness app that helps people find a community to train with: running, lifting, yoga, walking, cycling, swimming, anything physical. Strava tells you what you did. AltCrew tells you who you can do it with.
+> AltCrew is an Indian social fitness app that helps people find a community to train with: running, lifting, yoga, walking, cycling, swimming, anything physical. We tell you who you can train with, in your neighbourhood, at your pace.
 
 ## Launch
 - Date: Sunday, May 31, 2026
@@ -10,26 +10,25 @@
 - App drops: 7:30 PM at the on-stage Founders Q&A
 - Tickets: Sold on BookMyShow.
 
-## Available cities at launch
-- Visakhapatnam (Vizag) only. More cities open as we have the people to support them well.
+## Cities at launch
+- Visakhapatnam (Vizag) only at launch. Other Indian cities open progressively as we onboard local crews to support them well.
 
 ## Features
-- PacePals: pacing partner matching
+- PacePals: pacing partner matching to within ±15 sec/km
 - Flash Album: 24-hour event photo album, unlocks at the event, shareable to Instagram
-- Shoe Locker: gear log
-- Smart Waivers: digital waivers for organizers
+- Shoe Locker: gear log with km tracking
+- Smart Waivers: digital waivers for organizers, reusable across events
 
 ## Pricing
-- Free for members
-- Free for community organizers through August 2026
-- Paid organizer tier launches September 2026
+- Free for members, always.
+- Free for community organizers until further notice.
 
 ## Founder
-- Abhishikth, based in Vizag. Lost 35 kg in a year through walking, weight training, and structured diet, with a coach who believed in him.
+- Abhishikth Veng, based in Visakhapatnam. Lost 35 kg in a year through walking, weight training, and structured diet, guided by a coach who believed in him. AltCrew exists for people who never felt welcome in fitness rooms.
 
 ## Site
 - Homepage: https://altcrew.in
 - Contact: hello@altcrew.in
 - Instagram: https://instagram.com/altcrew.in
 
-Last updated: 2026-04-27
+Last updated: 2026-04-28

@@ -69,14 +69,14 @@ export function Founder() {
                 <div className="relative h-14 w-14 overflow-hidden rounded-full border border-fg/20 bg-bg">
                   <Image
                     src="/portraits/founder.jpeg"
-                    alt="Abhishikth, founder of AltCrew"
+                    alt="Abhishikth Veng, founder of AltCrew"
                     fill
                     sizes="56px"
                     className="object-cover"
                   />
                 </div>
                 <div>
-                  <div className="font-bold">Abhishikth</div>
+                  <div className="font-bold">Abhishikth Veng</div>
                   <div className="font-mono text-[11px] uppercase tracking-widest text-muted">
                     founder
                   </div>

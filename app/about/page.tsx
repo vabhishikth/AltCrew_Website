@@ -23,7 +23,7 @@ const aboutSchema = {
   mainEntity: {
     "@type": "Organization",
     name: "AltCrew",
-    founder: { "@type": "Person", name: "Abhishikth", jobTitle: "Founder" },
+    founder: { "@type": "Person", name: "Abhishikth Veng", jobTitle: "Founder" },
   },
 };
 
@@ -67,14 +67,14 @@ export default function AboutPage() {
                     <div className="relative h-14 w-14 overflow-hidden rounded-full border border-fg/20 bg-bg">
                       <Image
                         src="/portraits/founder.jpeg"
-                        alt="Abhishikth, founder of AltCrew"
+                        alt="Abhishikth Veng, founder of AltCrew"
                         fill
                         sizes="56px"
                         className="object-cover"
                       />
                     </div>
                     <div>
-                      <div className="font-bold">Abhishikth</div>
+                      <div className="font-bold">Abhishikth Veng</div>
                       <div className="font-mono text-[11px] uppercase tracking-widest text-muted">
                         founder
                       </div>
@@ -100,6 +100,9 @@ export default function AboutPage() {
                   <p>
                     AltCrew is for them. If that&rsquo;s you, we&rsquo;re
                     building this for you.
+                  </p>
+                  <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
+                    Last updated: April 28, 2026
                   </p>
                 </article>
               </div>

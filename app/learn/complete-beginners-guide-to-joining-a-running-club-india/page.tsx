@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     url: `https://altcrew.in/learn/${slug}`,
     publishedTime: datePublished,
     modifiedTime: dateModified,
-    authors: ["Abhishikth"],
+    authors: ["Abhishikth Veng"],
   },
 };
 
@@ -32,7 +32,7 @@ const articleSchema = {
   "@type": "BlogPosting",
   headline: title,
   description,
-  author: { "@type": "Person", name: "Abhishikth", jobTitle: "Founder" },
+  author: { "@type": "Person", name: "Abhishikth Veng", jobTitle: "Founder" },
   publisher: {
     "@type": "Organization",
     name: "AltCrew",
@@ -78,7 +78,7 @@ export default function Post() {
                 you know how to find them. Here is the playbook.
               </p>
               <p className="mt-4 font-mono text-[11px] uppercase tracking-widest text-muted">
-                By Abhishikth, founder of AltCrew
+                By Abhishikth Veng, founder of AltCrew
               </p>
             </header>
 

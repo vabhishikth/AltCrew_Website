@@ -8,7 +8,7 @@ import { JsonLd } from "@/components/json-ld";
 export const metadata: Metadata = {
   title: "Host an event",
   description:
-    "Host a one-time fitness event on AltCrew. Festivals, races, retreats, charity runs. Ticketing, RSVPs, digital waivers, group albums, on-site check-in. Free pre-launch.",
+    "Host a one-time fitness event on AltCrew. Festivals, races, retreats, charity runs. Ticketing, RSVPs, digital waivers, group albums, on-site check-in. Free for organizers.",
   alternates: { canonical: "https://altcrew.in/organizers/host-an-event" },
 };
 
@@ -25,8 +25,7 @@ const serviceSchema = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "INR",
-    priceValidUntil: "2026-08-31",
-    description: "Free for event organizers through August 2026",
+    description: "Free for event organizers",
   },
 };
 
@@ -94,6 +93,38 @@ export default function HostAnEventPage() {
               focus on the people who showed up.
             </p>
 
+            <div className="mt-10 max-w-[68ch] space-y-5 text-base text-fg/85 md:text-lg">
+              <p>
+                A one-time event is, secretly, a four-week project. Marketing
+                the date. Selling or releasing tickets. Collecting waivers
+                from people who have never heard of your event before. Sending
+                last-minute change-of-route messages. Manning a check-in
+                table at 5:30 AM with a clipboard and a printed spreadsheet.
+                Then trying, somehow, to capture the energy of the day so the
+                next one sells faster.
+              </p>
+              <p>
+                Most of that work happens in five different tools, none of
+                which talk to each other. Hosts spend more time stitching
+                tools together than they spend with the community they
+                built. AltCrew puts the whole stack into one app: ticketing
+                that supports free, paid, members-only, and sponsor-comped
+                tiers. RSVPs visible in real time. Digital waivers that sign
+                once and follow the member forever. A pre-event broadcast
+                channel for weather calls and route updates. On-site
+                check-in with a tap or a scan.
+              </p>
+              <p>
+                The differentiator that hosts come back for, though, is the
+                post-event recap. The Flash Album opens the moment the event
+                starts and closes twenty-four hours later. Every attendee
+                drops in their photos in the window. The recap page
+                auto-generates with photos, finishers, and a one-tap link to
+                your next event. Hosts who use it consistently see the next
+                event sell faster, because the recap is the marketing.
+              </p>
+            </div>
+
             <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
               <a
                 href="mailto:hello@altcrew.in?subject=Host%20an%20event"
@@ -127,12 +158,12 @@ export default function HostAnEventPage() {
                 pricing
               </p>
               <h2 className="mt-3 text-display font-bold">
-                Free for events through August 2026.
+                Free for hosts. Until further notice.
               </h2>
               <p className="mt-6 text-lg text-fg/85">
-                Hosts pay zero platform fees on free or paid events through
-                August 2026. From September 2026, paid events incur a small
-                INR-priced platform fee. Free events stay free.
+                Zero platform fees on free or paid events. Use every tool on
+                this page without a credit card or a trial clock. We will
+                tell you well in advance if anything ever changes.
               </p>
             </div>
           </div>

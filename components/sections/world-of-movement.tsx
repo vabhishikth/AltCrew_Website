@@ -104,8 +104,6 @@ export function WorldOfMovement() {
       style={{ fontFamily: "var(--font-figtree), system-ui, sans-serif" }}
       aria-labelledby="wom-heading"
     >
-      <div className="wom-top-bar" />
-
       <svg
         xmlns="http://www.w3.org/2000/svg"
         style={{ position: "absolute", width: 0, height: 0 }}

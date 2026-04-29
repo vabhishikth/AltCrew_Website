@@ -102,7 +102,7 @@ export function Hero() {
             initial="hidden"
             animate="show"
           >
-            Meet the
+            Find your
           </motion.span>
           <motion.span
             className="hcc-title-line2"
@@ -111,7 +111,7 @@ export function Hero() {
             initial="hidden"
             animate="show"
           >
-            Movement.
+            Crew.
           </motion.span>
         </h1>
 

@@ -36,7 +36,7 @@ const items = [
   ["Flash Album", "One album per meet, unlocks at the event, open for 24 hours, shareable to Instagram."],
   ["Member messaging", "Group threads, broadcast to attendees, no WhatsApp clutter."],
   ["Gear and shoe tracking", "Members log their gear. You see who needs new shoes."],
-  ["Pace-based pairing", "Match runners within fifteen seconds per kilometre of each other."],
+  ["PacePals", "Attendees pick a level (casual, intermediate, athlete) at ticket purchase. They see how many people at their pace are coming, before they show up."],
 ];
 
 export default function OrganizersPage() {

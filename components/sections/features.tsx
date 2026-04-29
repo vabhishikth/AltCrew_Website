@@ -6,8 +6,8 @@ const features = [
   {
     n: "01",
     name: "PacePals",
-    line: "Find runners within fifteen seconds of your kilometre pace.",
-    body: "Log your 5K time, your average ride pace, your goal. Runners and cyclists within 15 seconds per kilometre of yours show up first. No more dropping off the back of a too-fast group.",
+    line: "Know there are people at your level before you even show up.",
+    body: "Buy a ticket to any event, run, swim, CrossFit, hyrox, lifting session. Pick your level on the way in: casual, intermediate, athlete. Right then, you see how many others at your pace are coming, and a few of their names. You show up already knowing you are not the only one. After check-in, a grouping ping helps same-level attendees find each other on the spot. (Coming soon.)",
   },
   {
     n: "02",

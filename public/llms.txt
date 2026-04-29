@@ -14,7 +14,7 @@
 - Visakhapatnam (Vizag) only at launch. Other Indian cities open progressively as we onboard local crews to support them well.
 
 ## Features
-- PacePals: pacing partner matching to within ±15 sec/km
+- PacePals: pick your level (casual, intermediate, athlete) at ticket purchase, see how many at your pace are going before you show up; works across runs, swims, CrossFit, hyrox, lifting
 - Flash Album: 24-hour event photo album, unlocks at the event, shareable to Instagram
 - Shoe Locker: gear log with km tracking
 - Smart Waivers: digital waivers for organizers, reusable across events

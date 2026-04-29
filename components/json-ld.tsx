@@ -42,7 +42,7 @@ export const appSchema = {
   operatingSystem: "iOS, Android",
   applicationCategory: "HealthApplication",
   description:
-    "Find a fitness community to train with. Discovery, pace-matching, group photos, gear tracking, digital waivers.",
+    "Find a fitness community to train with. Discovery, pace-level matching at ticket purchase, group photos, gear tracking, digital waivers.",
   offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
   datePublished: "2026-05-31",
 };

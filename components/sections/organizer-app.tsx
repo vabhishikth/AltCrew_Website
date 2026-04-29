@@ -259,20 +259,20 @@ export function OrganizerApp() {
           {/* CARD 3 — PacePals */}
           <div className="oa-card oa-card-pace" aria-hidden>
             <div className="oa-card-row">
-              <span className="oa-card-label">Pace Groups</span>
-              <span style={{ fontFamily: "Geist Mono, monospace", fontSize: 10, color: "var(--muted)" }}>3</span>
+              <span className="oa-card-label">PacePals</span>
+              <span style={{ fontFamily: "Geist Mono, monospace", fontSize: 10, color: "var(--muted)" }}>3 levels</span>
             </div>
             <div className="oa-pace-row">
-              <span><span className="oa-pace-dot" style={{ background: "#e5572b" }} />5:30/km</span>
-              <span style={{ color: "var(--muted)", fontFamily: "Geist Mono, monospace", fontSize: 11 }}>12</span>
+              <span><span className="oa-pace-dot" style={{ background: "#c7ff57" }} />Casual</span>
+              <span style={{ color: "var(--muted)", fontFamily: "Geist Mono, monospace", fontSize: 11 }}>18</span>
             </div>
             <div className="oa-pace-row">
-              <span><span className="oa-pace-dot" style={{ background: "#74f1ff" }} />6:00/km</span>
-              <span style={{ color: "var(--muted)", fontFamily: "Geist Mono, monospace", fontSize: 11 }}>8</span>
+              <span><span className="oa-pace-dot" style={{ background: "#74f1ff" }} />Intermediate</span>
+              <span style={{ color: "var(--muted)", fontFamily: "Geist Mono, monospace", fontSize: 11 }}>22</span>
             </div>
             <div className="oa-pace-row">
-              <span><span className="oa-pace-dot" style={{ background: "#c7ff57" }} />6:30/km</span>
-              <span style={{ color: "var(--muted)", fontFamily: "Geist Mono, monospace", fontSize: 11 }}>6</span>
+              <span><span className="oa-pace-dot" style={{ background: "#e5572b" }} />Athlete</span>
+              <span style={{ color: "var(--muted)", fontFamily: "Geist Mono, monospace", fontSize: 11 }}>9</span>
             </div>
           </div>
         </motion.div>

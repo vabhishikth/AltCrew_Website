@@ -64,11 +64,12 @@ export default function FindPage() {
               </div>
               <div>
                 <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
-                  how we match
+                  how it matches
                 </p>
                 <p className="mt-3 text-base text-fg/80">
-                  By sport, pace within ±15 seconds per kilometre, and
-                  schedule fit.
+                  By sport, your level (casual, intermediate, athlete), and
+                  schedule fit. You see how many people at your pace are
+                  going, before you go.
                 </p>
               </div>
               <div>

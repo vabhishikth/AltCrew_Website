@@ -7,7 +7,7 @@ const features = [
     n: "01",
     name: "PacePals",
     line: "Find runners within fifteen seconds of your kilometre pace.",
-    body: "Tell us your 5K time, your average ride pace, and your goal. We surface runners and cyclists within ±15 seconds per kilometre of you. No more dropping off the back of a too-fast group.",
+    body: "Log your 5K time, your average ride pace, your goal. Runners and cyclists within 15 seconds per kilometre of yours show up first. No more dropping off the back of a too-fast group.",
   },
   {
     n: "02",
@@ -19,7 +19,7 @@ const features = [
     n: "03",
     name: "Shoe Locker",
     line: "Track every kilometre on every pair. Replace before the foam dies.",
-    body: "Log every pair. We tally the kilometres and tell you when to retire them, usually around 600 km, before the cushion goes and the injuries start.",
+    body: "Log every pair. Kilometres tally automatically. A retirement nudge lands around 600 km, before the cushion goes and the injuries start.",
   },
   {
     n: "04",
@@ -49,7 +49,7 @@ export function Features() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             className="mt-4 text-display max-w-[18ch] font-bold"
           >
-            Four things only AltCrew does.
+            Four things you only get here.
           </motion.h2>
         </div>
 

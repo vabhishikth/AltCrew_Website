@@ -128,8 +128,9 @@ export function OrganizerApp() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ delay: 0.15, duration: 0.6 }}
           >
-            Schedules, RSVPs, check-ins, waivers, photos, pace groups. Handled.
-            Free for clubs. Paid events pay a small commission on tickets sold.
+            Your schedules, your RSVPs, your check-ins, your waivers, your
+            photos, your pace groups. Handled. Free for clubs. Paid events:
+            small commission on tickets sold.
           </motion.p>
 
           <motion.a

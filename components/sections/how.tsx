@@ -6,7 +6,7 @@ const steps = [
   {
     n: "01",
     title: "Drop your pin",
-    body: "Drop your city, the sports you train, your pace. Sixty seconds, no signup wall.",
+    body: "Your city, your sports, your pace. Sixty seconds, no signup wall.",
   },
   {
     n: "02",
@@ -16,7 +16,7 @@ const steps = [
   {
     n: "03",
     title: "Show up",
-    body: "Tap RSVP. We handle the rest: waivers, photos, schedules.",
+    body: "Tap RSVP. Waivers, photos, schedules, all handled.",
   },
 ];
 

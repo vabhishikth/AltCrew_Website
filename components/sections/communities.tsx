@@ -13,7 +13,7 @@ type Card = {
 const cards: Card[] = [
   {
     title: "Run Clubs & Crews",
-    body: "From sunrise 5Ks to weekend long runs. Manage your crew, track pace groups, and grow without group-chat chaos.",
+    body: "Sunrise 5Ks to weekend long runs. Run your crew without the group-chat chaos. Pace groups, RSVPs, photos, all in one place.",
     src: "/wom/run-v2.png",
     alt: "Group of runners on a morning run, energetic city streets",
   },
@@ -53,7 +53,7 @@ export function Communities() {
             id="communities-heading"
             className="text-display mt-5 font-bold"
           >
-            Built for every crew that moves.
+            Every crew that moves.
           </h2>
         </motion.div>
 

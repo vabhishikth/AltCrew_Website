@@ -91,7 +91,7 @@ export function Hero() {
           transition={{ duration: 0.5 }}
           className="hcc-eyebrow"
         >
-          Pre-launch · India · Launching may 31, 2026
+          Pre-launch · India · Drops May 31, 2026
         </motion.div>
 
         <h1 id="hero-heading" className="hcc-title" style={{ marginTop: 28 }}>
@@ -102,7 +102,7 @@ export function Hero() {
             initial="hidden"
             animate="show"
           >
-            Find your
+            Meet the
           </motion.span>
           <motion.span
             className="hcc-title-line2"
@@ -111,7 +111,7 @@ export function Hero() {
             initial="hidden"
             animate="show"
           >
-            Crew.
+            Movement.
           </motion.span>
         </h1>
 
@@ -148,8 +148,9 @@ export function Hero() {
           transition={{ delay: 0.85, duration: 0.55 }}
           className="hcc-body"
         >
-          Find a crew to lift, run, stretch, ride, or swim with. In your
-          neighbourhood. At your pace.
+          Your city is already moving. Crews running at sunrise. Yoga at
+          the boardwalk. Lifters at the corner gym. Find the people who
+          train like you do.
         </motion.p>
 
         <motion.div

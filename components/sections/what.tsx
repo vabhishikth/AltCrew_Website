@@ -11,7 +11,7 @@ const pillars = [
   {
     n: "02",
     title: "Matching",
-    body: "Tell us your pace, your goal, your schedule. We surface the people you should be training next to.",
+    body: "Drop your pace, your goal, your schedule. The people training where you do, at your speed, surface first.",
   },
   {
     n: "03",
@@ -31,7 +31,7 @@ export function What() {
         <div className="grid gap-12 md:grid-cols-12">
           <aside className="md:col-span-3">
             <p className="font-mono text-[11px] uppercase tracking-widest text-muted">
-              what altcrew does
+              what you can do
             </p>
           </aside>
           <div className="md:col-span-9 md:pl-6">

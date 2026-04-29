@@ -35,15 +35,13 @@ export function Problem() {
             transition={{ delay: 0.1, duration: 0.6 }}
             className="mt-8 max-w-[68ch] text-base text-muted md:text-lg"
           >
-            AltCrew is an India-first social fitness app that helps anyone find
-            a crew to train with: running, lifting, yoga, cycling, swimming,
-            walking, padel, badminton, kabaddi. Members use it free. Community
-            organizers run their clubs through it without spreadsheets,
-            schedules, RSVPs, waivers, and photos all handled in one place. The
-            app launches Sunday, May 31, 2026 in Visakhapatnam at the Vizag
-            Fitness &amp; Flea Fest, with more cities opening as the community
-            grows. Find people who train like you do, in your neighbourhood, at
-            your pace.
+            Crews are running in your city right now. Five AM tempo runs.
+            Saturday morning yoga circles. After-work lifting groups. Trail
+            hikes that take ten people up the Western Ghats before sunrise.
+            Running clubs in Vizag, yoga groups in Hyderabad, cycling
+            pelotons in Bangalore, padel courts in Mumbai. Every sport, every
+            pace, in your neighbourhood. The barrier was never motivation. It
+            was finding the crew that fits you.
           </motion.p>
 
           <motion.div
@@ -54,14 +52,14 @@ export function Problem() {
             className="mt-10 grid gap-8 text-lg text-fg/85 md:grid-cols-2 md:text-xl"
           >
             <p>
-              The communities are there. Scattered across private group chats
-              you weren&rsquo;t added to, social pages you&rsquo;d have to know
-              to follow, rooftops and parks you&rsquo;d have to know to look
-              at.
+              The communities are there. Locked in private group chats you
+              weren&rsquo;t added to. Instagram pages you&rsquo;d have to
+              know to follow. Rooftops and parks you&rsquo;d have to know to
+              look at.
             </p>
             <p>
-              If you&rsquo;re already in, you&rsquo;re in. If you&rsquo;re not,
-              you stay out.
+              If you&rsquo;re already in, you&rsquo;re in. If you&rsquo;re
+              not, you stay out.
             </p>
           </motion.div>
         </div>

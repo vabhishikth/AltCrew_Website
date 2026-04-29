@@ -21,7 +21,12 @@ const heroCss = `
 
 .hcc-title{font-family:Figtree,Geist Sans,sans-serif;font-weight:900;line-height:0.86;letter-spacing:-0.045em;text-transform:uppercase;color:var(--fg);margin:0;}
 .hcc-title-line1{display:block;font-size:clamp(4rem,11vw,10rem);position:relative;z-index:3;}
-.hcc-title-line2{display:block;font-size:clamp(5rem,18vw,16rem);color:var(--accent);position:relative;z-index:4;margin-top:-0.04em;mix-blend-mode:multiply;}
+.hcc-title-line2{display:block;font-size:clamp(5rem,18vw,16rem);color:var(--accent);position:relative;z-index:4;margin-top:-0.04em;}
+@supports (mix-blend-mode:multiply){
+  @media (min-width:901px) and (prefers-contrast:no-preference){
+    .hcc-title-line2{mix-blend-mode:multiply;}
+  }
+}
 
 .hcc-photo{position:absolute;top:140px;right:6%;width:36%;max-width:520px;min-width:320px;aspect-ratio:3/4;border-radius:24px;overflow:hidden;z-index:2;box-shadow:0 20px 60px rgba(26,23,20,0.18),0 0 0 1px rgba(26,23,20,0.06);transform:rotate(-1.5deg);}
 .hcc-photo img{width:100%;height:100%;object-fit:cover;}

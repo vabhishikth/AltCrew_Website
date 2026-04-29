@@ -170,7 +170,8 @@ export function WorldOfMovement() {
                 alt={c.title}
                 width={560}
                 height={720}
-                priority={i < 4}
+                priority={i === 0}
+                loading={i === 0 ? undefined : "lazy"}
               />
               <div className="wom-card-overlay">
                 <span

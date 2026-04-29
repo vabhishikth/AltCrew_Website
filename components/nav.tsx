@@ -99,7 +99,7 @@ export function Nav() {
           </a>
           <a
             href="#waitlist"
-            className="inline-block rounded-full bg-[var(--accent)] px-3 py-1.5 text-xs font-medium text-[var(--accent-fg)] transition hover:bg-[var(--color-rust-deep)] sm:px-4 sm:py-2 sm:text-sm"
+            className="inline-flex min-h-[44px] items-center justify-center rounded-full bg-[var(--accent)] px-4 py-2.5 text-xs font-medium text-[var(--accent-fg)] transition hover:bg-[var(--color-rust-deep)] sm:px-5 sm:py-2 sm:text-sm"
           >
             Join the Crew
           </a>

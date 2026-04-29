@@ -126,17 +126,9 @@ export function Footer() {
       <div className="border-t border-hairline">
         <div className="container-page flex flex-col items-start justify-between gap-3 py-6 font-mono text-[11px] uppercase tracking-widest text-muted md:flex-row md:items-center">
           <div className="flex flex-col gap-1 md:flex-row md:items-center md:gap-6">
-            <span>© {new Date().getFullYear()} AltCrew Technologies</span>
-            <time
-              dateTime={new Date().toISOString().slice(0, 10)}
-              className="text-muted/70"
-            >
-              Last updated{" "}
-              {new Date().toLocaleDateString("en-IN", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
+            <span>© 2026 AltCrew Technologies</span>
+            <time dateTime="2026-04-29" className="text-muted/70">
+              Last updated April 29, 2026
             </time>
           </div>
           <div className="flex flex-wrap gap-6">

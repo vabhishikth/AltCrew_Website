@@ -60,7 +60,7 @@ const css = `
 .oa-card-num{font-family:Geist Sans,sans-serif;font-weight:700;font-size:28px;letter-spacing:-0.02em;line-height:1;margin:6px 0 8px;}
 .oa-card-row{display:flex;align-items:center;justify-content:space-between;gap:10px;}
 .oa-mini-avatars{display:inline-flex;}
-.oa-mini-avatar{width:18px;height:18px;border-radius:50%;border:1.5px solid #fff;margin-left:-5px;}
+.oa-mini-avatar{width:18px;height:18px;border-radius:50%;border:1.5px solid var(--color-cream);margin-left:-5px;}
 .oa-mini-avatar:first-child{margin-left:0;}
 .oa-spark{width:80px;height:30px;}
 .oa-pill-up{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:9999px;background:rgba(199,255,87,0.6);color:#1a3a08;font-family:Geist Mono,ui-monospace,monospace;font-size:9px;font-weight:700;letter-spacing:0.06em;}

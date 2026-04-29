@@ -45,7 +45,7 @@ Missing:
 | Reddit | Not present | Seed presence in r/IndiaSpeaks, r/india, r/running, r/Vizag. Founder AMA in r/IndianFitness post-launch. |
 | YouTube | Not present | Strongest single AI signal (Ahrefs 0.737 correlation). Launch video, founder origin story, festival recap. |
 | LinkedIn | Unknown | Founder profile linking to altcrew.in. Company page. |
-| Instagram | @altcrew.in present | Maintain. |
+| Instagram | @altcrewapp present | Maintain. |
 
 ## Schema Audit
 
@@ -110,7 +110,7 @@ export const founderSchema = {
   worksFor: { "@type": "Organization", name: "AltCrew" },
   description: "Founder of AltCrew. Lost 35 kg in a year through walking, weight training, and structured nutrition guided by a coach.",
   sameAs: [
-    "https://instagram.com/altcrew.in",
+    "https://www.instagram.com/altcrewapp",
     // add LinkedIn URL when public
   ],
   address: {

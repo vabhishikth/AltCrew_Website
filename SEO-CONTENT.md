@@ -66,7 +66,7 @@ No `/learn` or `/blog` exists yet. No internal links to deeper pages because the
 
 ### External linking
 
-Two external links total: `instagram.com/altcrew.in` (5 instances), `mailto:hello@altcrew.in` (3 instances). No citations to research, no links to running/fitness authorities, no statistics sources.
+Two external links total: `instagram.com/altcrewapp` (5 instances), `mailto:hello@altcrew.in` (3 instances). No citations to research, no links to running/fitness authorities, no statistics sources.
 
 This hurts authoritativeness. The Stats section especially: claims "2.5M registered runners in India" with no link to source (likely Athletics Federation of India or a 2023 industry report).
 

@@ -267,12 +267,12 @@ export function Waitlist() {
                 <div className="mt-4 flex items-center gap-3 border-t border-hairline pt-6 text-sm">
                   <span className="text-muted">Or follow along on Instagram:</span>
                   <a
-                    href="https://instagram.com/altcrew.in"
+                    href="https://www.instagram.com/altcrewapp"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 font-medium text-fg underline decoration-[var(--accent)] decoration-2 underline-offset-4 transition hover:text-[var(--accent)]"
                   >
-                    @altcrew.in
+                    @altcrewapp
                     <span aria-hidden>→</span>
                   </a>
                 </div>

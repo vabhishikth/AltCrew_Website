@@ -106,12 +106,12 @@ export function Footer() {
             </li>
             <li>
               <a
-                href="https://instagram.com/altcrew.in"
+                href="https://www.instagram.com/altcrewapp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-accent"
               >
-                Instagram @altcrew.in
+                Instagram @altcrewapp
               </a>
             </li>
             <li>

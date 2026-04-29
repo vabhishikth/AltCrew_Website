@@ -39,7 +39,7 @@ const helpFaqs = [
   },
   {
     q: "Where can I follow updates?",
-    a: "On Instagram at @altcrew.in or on the Learn section of the website.",
+    a: "On Instagram at @altcrewapp or on the Learn section of the website.",
   },
 ];
 

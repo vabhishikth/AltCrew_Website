@@ -75,7 +75,7 @@ export function Nav() {
 
         <div className="flex items-center gap-2 sm:gap-3">
           <a
-            href="https://instagram.com/altcrew.in"
+            href="https://www.instagram.com/altcrewapp"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Follow AltCrew on Instagram"
@@ -181,13 +181,13 @@ export function Nav() {
               <span aria-hidden>→</span>
             </a>
             <a
-              href="https://instagram.com/altcrew.in"
+              href="https://www.instagram.com/altcrewapp"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="mt-4 inline-flex items-center justify-center gap-2 font-mono text-[12px] uppercase tracking-widest text-muted"
             >
-              @altcrew.in on Instagram
+              @altcrewapp on Instagram
               <span aria-hidden>→</span>
             </a>
           </nav>

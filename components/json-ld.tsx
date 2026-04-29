@@ -19,7 +19,7 @@ export const orgSchema = {
   foundingDate: "2026",
   founder: { "@id": "https://altcrew.in/#founder" },
   email: "hello@altcrew.in",
-  sameAs: ["https://instagram.com/altcrew.in"],
+  sameAs: ["https://www.instagram.com/altcrewapp"],
   description:
     "AltCrew is an Indian social fitness app helping people find a community to train with: running, lifting, yoga, cycling, swimming, walking, and more.",
   areaServed: { "@type": "Country", name: "India" },

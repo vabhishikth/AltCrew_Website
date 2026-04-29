@@ -101,12 +101,12 @@ export function Festival() {
                   Tickets drop on BookMyShow soon
                 </span>
                 <a
-                  href="https://instagram.com/altcrew.in"
+                  href="https://www.instagram.com/altcrewapp"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-mono text-[12px] uppercase tracking-widest text-[var(--accent)] underline decoration-2 underline-offset-4 hover:text-[var(--color-cream)]"
                 >
-                  Follow @altcrew.in for the drop
+                  Follow @altcrewapp for the drop
                 </a>
               </div>
             </motion.div>

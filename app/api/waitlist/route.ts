@@ -32,40 +32,30 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: false, error: "bad_city" }, { status: 400 });
   }
 
-  const apiKey = process.env.LOOPS_API_KEY;
-  const formId = process.env.LOOPS_FORM_ID;
+  const supabaseUrl = process.env.SUPABASE_URL;
+  const supabaseKey = process.env.SUPABASE_ANON_KEY;
 
-  if (!apiKey || !formId) {
-    console.warn("[waitlist] LOOPS env not set; logging signup", {
-      email,
-      city,
-      sports,
-    });
+  if (!supabaseUrl || !supabaseKey) {
+    console.warn("[waitlist] SUPABASE env not set; logging signup", { email, city, sports });
     return NextResponse.json({ ok: true, mode: "logged" });
   }
 
-  const r = await fetch("https://app.loops.so/api/v1/contacts/create", {
+  const r = await fetch(`${supabaseUrl}/rest/v1/waitlist`, {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "content-type": "application/json",
+      apikey: supabaseKey,
+      Authorization: `Bearer ${supabaseKey}`,
+      "Content-Type": "application/json",
+      Prefer: "return=minimal",
     },
-    body: JSON.stringify({
-      email,
-      source: "altcrew.in/waitlist",
-      city,
-      sports: sports.join(", "),
-      mailingLists: { [formId]: true },
-    }),
+    body: JSON.stringify({ email, city, sports: sports.join(", ") }),
   });
 
+  // 409 = duplicate email, treat as success
   if (!r.ok && r.status !== 409) {
     const txt = await r.text().catch(() => "");
-    console.error("[waitlist] loops error", r.status, txt);
-    return NextResponse.json(
-      { ok: false, error: "upstream" },
-      { status: 502 },
-    );
+    console.error("[waitlist] supabase error", r.status, txt);
+    return NextResponse.json({ ok: false, error: "upstream" }, { status: 502 });
   }
 
   return NextResponse.json({ ok: true });

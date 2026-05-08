@@ -2,12 +2,14 @@
 
 import { motion } from "motion/react";
 
+const BMS_URL = "https://in.bookmyshow.com/sports/fitness-flea/ET00498355";
+
 const meta = [
   { k: "Date", v: "Sunday, May 31, 2026" },
   { k: "Time", v: "9:00 AM – 10:00 PM" },
   { k: "Venue", v: "Sai Priya Resorts, Visakhapatnam" },
   { k: "App drops", v: "7:30 PM · on-stage Founders Q&A" },
-  { k: "Tickets", v: "BookMyShow · price announced soon" },
+  { k: "Tickets", v: "Book on BookMyShow", href: BMS_URL },
   { k: "Lineup", v: "Full schedule announced shortly" },
 ];
 
@@ -80,7 +82,18 @@ export function Festival() {
                     {m.k}
                   </dt>
                   <dd className="col-span-2 text-[var(--color-cream)] md:col-span-9 md:text-lg">
-                    {m.v}
+                    {m.href ? (
+                      <a
+                        href={m.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline decoration-1 underline-offset-4 hover:text-[var(--accent)]"
+                      >
+                        {m.v}
+                      </a>
+                    ) : (
+                      m.v
+                    )}
                   </dd>
                 </div>
               ))}
@@ -94,19 +107,21 @@ export function Festival() {
               className="mt-12 flex flex-col gap-3 sm:flex-row"
             >
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-                <span
-                  aria-disabled="true"
-                  className="inline-flex items-center gap-2 rounded-full border border-[var(--color-cream)]/30 px-6 py-4 text-base font-medium text-[var(--color-cream)]/70"
+                <a
+                  href={BMS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full bg-[var(--accent)] px-6 py-4 text-base font-medium text-[var(--accent-fg)] transition hover:bg-[var(--color-rust-deep)]"
                 >
-                  Tickets drop on BookMyShow soon
-                </span>
+                  Book on BookMyShow →
+                </a>
                 <a
                   href="https://www.instagram.com/altcrewapp"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-mono text-[12px] uppercase tracking-widest text-[var(--accent)] underline decoration-2 underline-offset-4 hover:text-[var(--color-cream)]"
                 >
-                  Follow @altcrewapp for the drop
+                  Follow @altcrewapp
                 </a>
               </div>
             </motion.div>

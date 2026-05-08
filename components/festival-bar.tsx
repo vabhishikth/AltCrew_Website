@@ -26,6 +26,8 @@ const message = (
     <span>Sai Priya Resorts, Vizag</span>
     <span className="fb-sep" aria-hidden />
     <a href="#festival">Festival details →</a>
+    <span className="fb-sep" aria-hidden />
+    <a href="https://in.bookmyshow.com/sports/fitness-flea/ET00498355" target="_blank" rel="noopener noreferrer">Book tickets →</a>
   </>
 );
 

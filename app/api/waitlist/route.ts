@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { neon } from "@neondatabase/serverless";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -23,7 +24,7 @@ export async function POST(req: Request) {
 
   const email = (body.email ?? "").trim().toLowerCase();
   const city = (body.city ?? "").trim();
-  const sports = Array.isArray(body.sports) ? body.sports.slice(0, 12) : [];
+  const sports = Array.isArray(body.sports) ? body.sports.filter((x): x is string => typeof x === "string").slice(0, 12) : [];
 
   if (!isEmail(email)) {
     return NextResponse.json({ ok: false, error: "bad_email" }, { status: 400 });
@@ -32,29 +33,32 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: false, error: "bad_city" }, { status: 400 });
   }
 
-  const supabaseUrl = process.env.SUPABASE_URL;
-  const supabaseKey = process.env.SUPABASE_ANON_KEY;
+  const databaseUrl = process.env.DATABASE_URL;
 
-  if (!supabaseUrl || !supabaseKey) {
-    console.warn("[waitlist] SUPABASE env not set; logging signup", { email, city, sports });
+  if (!databaseUrl) {
+    console.warn("[waitlist] DATABASE_URL not set; logging signup", { email, city, sports });
     return NextResponse.json({ ok: true, mode: "logged" });
   }
 
-  const r = await fetch(`${supabaseUrl}/rest/v1/waitlist`, {
-    method: "POST",
-    headers: {
-      apikey: supabaseKey,
-      Authorization: `Bearer ${supabaseKey}`,
-      "Content-Type": "application/json",
-      Prefer: "return=minimal",
-    },
-    body: JSON.stringify({ email, city, sports: sports.join(", ") }),
-  });
-
-  // 409 = duplicate email, treat as success
-  if (!r.ok && r.status !== 409) {
-    const txt = await r.text().catch(() => "");
-    console.error("[waitlist] supabase error", r.status, txt);
+  try {
+    const sql = neon(databaseUrl);
+    await sql`
+      CREATE TABLE IF NOT EXISTS waitlist (
+        id         bigserial PRIMARY KEY,
+        email      text NOT NULL UNIQUE,
+        city       text NOT NULL,
+        sports     text[] NOT NULL DEFAULT '{}',
+        created_at timestamptz NOT NULL DEFAULT now()
+      )
+    `;
+    // Duplicate email is treated as success
+    await sql`
+      INSERT INTO waitlist (email, city, sports)
+      VALUES (${email}, ${city}, ${sports})
+      ON CONFLICT (email) DO NOTHING
+    `;
+  } catch (err) {
+    console.error("[waitlist] database error", err);
     return NextResponse.json({ ok: false, error: "upstream" }, { status: 502 });
   }
 
